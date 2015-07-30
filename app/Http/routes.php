@@ -13,6 +13,10 @@
 
 Route::get('/', 'WelcomeController@index');
 
+Route::get('/abot',function(){
+	retrun "about page";
+});
+
 Route::get('home', 'HomeController@index');
 Route::get('test','testController@index');
 Route::controllers([
