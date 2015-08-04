@@ -13,7 +13,7 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/abot',function(){
+Route::get('/about',function(){
 	retrun "about page";
 });
 
@@ -23,3 +23,20 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/reporting',function(){
+	return "adding the reporing feature";
+});
+
+Route::get('dashboard',function(){
+	return  "the dash board for the every user";
+});
+
+Route::get('admin',function(){
+	return  "the admin dash board for the admin";
+});
+
+Route::get('manager',function(){
+	return  "the dash board for the every manager";
+});
+
