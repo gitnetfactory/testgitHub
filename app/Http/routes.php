@@ -28,6 +28,8 @@ Route::controllers([
 
 Route::get('/customer',function(){
 	return view('customer.index');
+
+
 });
 
 Route::get('/dashboard',function(){
