@@ -14,7 +14,9 @@
 Route::get('/', 'WelcomeController@index');
 
 Route::get('/about',function(){
-	retrun "about page";
+
+	retrun view('about.index');
+
 });
 
 Route::get('home', 'HomeController@index');
