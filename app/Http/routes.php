@@ -13,8 +13,8 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/abot',function(){
-	retrun "about page";
+Route::get('/about',function(){
+	retrun view('about.index');
 });
 
 Route::get('home', 'HomeController@index');
@@ -23,3 +23,19 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('/customer',function(){
+	return "Making customer data for the customers";
+});
+
+Route::get('/dashboard',function(){
+	return "the dashboard for the all user";
+});
+
+Route::get('/admin',function(){
+	return "the dashboard for the all admin";
+});
+
+Route::('Manager',function(){
+	return view('manager');
+});
