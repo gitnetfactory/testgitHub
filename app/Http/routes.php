@@ -14,7 +14,9 @@
 Route::get('/', 'WelcomeController@index');
 
 Route::get('/about',function(){
-	retrun "about page";
+
+	retrun view('about.index');
+
 });
 
 Route::get('home', 'HomeController@index');
@@ -24,6 +26,21 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('/custmers',function(){
-	return "Making customer data for the customers";
+Route::get('/customer',function(){
+	return view('customer.index');
 });
+
+Route::get('/dashboard',function(){
+	return "the dashboard for the all user";
+});
+
+Route::get('/admin',function(){
+	return "the dashboard for the all admin";
+});
+
+Route::('Manager',function(){
+	return view('manager');
+});
+Route::get('tour',function(){
+	return view "new tour";
+};
