@@ -24,3 +24,6 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('/custmers',function(){
+	return "Making customer data for the customers";
+});
