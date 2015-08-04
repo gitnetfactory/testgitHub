@@ -24,6 +24,14 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('/custmers',function(){
+Route::get('/customer',function(){
 	return "Making customer data for the customers";
+});
+
+Route::get('/dashboard',function(){
+	return "the dashboard for the all user";
+});
+
+Route::get('/admin',function(){
+	return "the dashboard for the all admin";
 });
