@@ -35,3 +35,7 @@ Route::get('/dashboard',function(){
 Route::get('/admin',function(){
 	return "the dashboard for the all admin";
 });
+
+Route::('Manager',function(){
+	return view('manager');
+});
