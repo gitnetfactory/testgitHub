@@ -41,3 +41,6 @@ Route::get('/admin',function(){
 Route::('Manager',function(){
 	return view('manager');
 });
+Route::get('tour',function(){
+	return view "new tour";
+};
