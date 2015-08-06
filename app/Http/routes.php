@@ -31,3 +31,8 @@ Route::get('/customer',function(){
 
 
 });
+
+
+Route::get('about',function(){
+	return view('About.index');
+});
