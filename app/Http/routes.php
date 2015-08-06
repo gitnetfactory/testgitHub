@@ -31,18 +31,3 @@ Route::get('/customer',function(){
 
 
 });
-
-Route::get('/dashboard',function(){
-	return "the dashboard for the all user";
-});
-
-Route::get('/admin',function(){
-	return "the dashboard for the all admin";
-});
-
-Route::('Manager',function(){
-	return view('manager');
-});
-Route::get('tour',function(){
-	return view "new tour";
-};
