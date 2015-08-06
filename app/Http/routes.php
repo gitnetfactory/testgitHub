@@ -20,7 +20,7 @@ Route::get('/about',function(){
 });
 
 Route::get('home', 'HomeController@index');
-Route::get('test','testController@index');
+Route::get('realy','testController@index');
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
